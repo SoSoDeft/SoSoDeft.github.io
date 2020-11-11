@@ -1,0 +1,188 @@
+@import "post-large.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+
+
+body,html{
+  
+  /* Remove all margin and padding from entire page and set html body to full height of viewport*/
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  
+  }
+  
+  * {
+  
+  /* Set box-sizing to border-box to ensure border size = intended size. */
+    box-sizing: border-box;
+  
+  }
+
+  @media (max-width: 600px) {
+
+    body {
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 4em 2fr 1fr 4em;
+      grid-template-areas: 
+      "hd hd hd hd"
+      "main main main main"
+      "sct sct sct sct"
+      "ft ft ft ft";
+
+    }
+
+    header {
+
+      display: flex;
+      background-color: #001C97;
+      grid-area: hd;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto Mono", monospace;
+
+    }
+
+    h2,h3 {
+
+      font-family: "Roboto Mono", monospace;
+
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      grid-area: main;
+      padding-bottom: 2em;
+
+    }
+
+    blockquote {
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      color: rgb(102, 104, 116);
+      align-self: center;
+
+    }
+
+    h2 {
+
+      margin-left: 1.5em;
+      font-size: 22px;
+
+    }
+
+
+    section {
+      
+      grid-area: sct;
+      color: #fff;
+      background-image: linear-gradient(#2682fa, #001C97)
+
+    }
+
+    .author-title {
+
+      width: 100%;
+      text-align: center;
+
+    }
+
+    .avatar-info {
+
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .avatar {
+
+      background-image: url("../imgs/mh-headshot.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      margin-left: 2em;
+      margin-right: 1em;
+      border-radius: 100%;
+
+    }
+
+    .bio-text {
+
+      width: 100%;
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+
+    }
+
+    .social-media-icons {
+
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .twitter-icon {
+
+      width: 40px;
+      height: 40px;
+
+    }
+
+
+    .linkedin-icon {
+
+      width: 40px;
+      height: 40px;
+
+
+    }
+
+
+
+    .facebook-icon {
+
+      width: 40px;
+      height: 40px;
+
+    }
+
+    .current-company {
+
+      font-size: 10px;
+
+    }
+
+    .blog-text {
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5em;
+      margin-left: 2em;
+      margin-right: 2em;
+
+    }
+
+
+    .page-footer {
+
+      display: flex;
+      background-color: #001C97;
+      color: #fff;
+      font-size: 10px;
+      grid-area: ft;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      
+      
+    }
+}

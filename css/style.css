@@ -1,0 +1,228 @@
+@import "style-large.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body,html{
+  
+/* Remove all margin and padding from entire page and set html body to full height of viewport*/
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+
+* {
+
+/* Set box-sizing to border-box to ensure border size = intended size. */
+  box-sizing: border-box;
+
+}
+
+h2 {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+/*mobile-first design css*/
+@media (max-width: 600px){
+
+  .grid {
+    
+    display: grid;
+    grid-gap: 0;  
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "ft ft ft ft";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3em 1fr 1fr 3em;
+
+  }
+  
+  .first-caption > a {
+
+    color: #fff;
+
+  }
+
+  .other-caption > a {
+
+    color: #fff;
+
+  }
+
+  nav {
+
+    background-color: #001C97;
+    display: flex;
+    grid-area: nav;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .contact > a:link, a:visited {
+
+    color: #fff;
+
+  }
+
+  .logo {
+
+    font-family: "Roboto Mono", monospace;
+    margin-left: 1.5em;
+    color:#fff;
+
+  }
+
+  .contact {
+
+    margin-right: 2.5em;
+
+  }
+
+  header {
+
+    display: flex;
+    grid-area: hd;
+    background-color: rgb(19, 32, 211);
+
+  }
+
+  main {
+
+    display: flex; 
+    flex-direction: column;
+    grid-area: main;
+    grid-gap: 10px;  
+    padding: 1em 0 1em 0;
+    align-items: center;
+    background-color: #fff;
+
+  }
+
+  .blog-card {
+    
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 85%;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2);
+
+  } 
+
+  .first-button {
+
+    background-color: #000;
+    color: #000;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+  }
+
+  .img-placeholder-first {
+
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/laptop-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1em 1em;
+    height: 100%;
+    width: 95%;
+
+  }  
+
+  .first-caption {
+
+    font-size: 10px;
+    color: #fff;
+    padding-bottom: 4px;
+
+  }
+
+  .other-caption {
+
+    font-size: 10px;
+    color: #fff;
+    background-color: black;
+    padding-bottom: 4px;
+
+  }
+
+  .img-placeholder-other {
+
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/under-construction.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1em 1em;
+    height: 100%;
+    width: 95%;
+
+  }
+
+  .other-caption {
+
+    font-size: 10px;
+    color: #fff;
+    padding-bottom: 4px;
+
+  }
+
+  .bc-data {
+
+    display: flex;
+    width: 100%;
+    align-items:  center;  
+    justify-content: space-between;
+    
+  }
+
+  .blog-title-one {
+
+    margin-left: 1em;
+
+  }
+
+  .continue-to-post {
+
+    padding: .5em;
+    margin-right: 1em;
+
+  }
+
+  footer {
+
+    display: flex;
+    grid-area: ft;
+    color: blanchedalmond;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #001C97;    
+
+  }
+
+  .rights-reserved {
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+}
