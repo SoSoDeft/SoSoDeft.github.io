@@ -2,31 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-body,html{
+  body,html{
   
 /* Remove all margin and padding from entire page and set html body to full height of viewport*/
   margin: 0;
   padding: 0;
   height: 100vh;
 
-}
+  }
 
-* {
+  * {
 
 /* Set box-sizing to border-box to ensure border size = intended size. */
   box-sizing: border-box;
 
 }
 
-h2 {
+  h2 {
   
-  font-family: Arial, Helvetica, sans-serif;
-  
+  font-family: Arial, Helvetica, sans-serif;  
 
-}
+  }
 
 /*mobile-first design css*/
-@media (max-width: 600px){
+  @media (max-width: 600px){
 
   .grid {
     
@@ -121,11 +120,22 @@ h2 {
   .first-button {
 
     background-color: #000;
-    color: #000;
+    color: #fff;
     border: 1px solid gray;
     border-radius: 4px;
 
   }
+    
+  .first-button:hover {
+
+    background-color: dimgray;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+  }
+    
+    
 
   .img-placeholder-first {
 
