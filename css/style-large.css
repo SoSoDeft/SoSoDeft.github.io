@@ -3,13 +3,12 @@
 
 @media (min-width: 601px){
     
-    html,body{
+  html,body {
         
         height: 100%;
         width: 100%;
         
-    }
-    
+  }    
 
   .grid {
     
@@ -36,7 +35,6 @@
     color: #fff;
 
   }
-
   
   nav {
 
@@ -67,10 +65,9 @@
   
   .contact > a {
       
-    color: #fff;
-      
+    color: #fff;      
 
-}
+  }
 
   header {
 
@@ -111,15 +108,18 @@
   .first-button {
 
     background-color: #000;
-    color: #000;
+    color: #fff;
     border: 1px solid gray;
     border-radius: 4px;
 
   }
+    
+  .first-button:hover {
 
-  .first-button > a:link, a:visited {
-
+    background-color: dimgray;
     color: #fff;
+    border: 1px solid gray;
+    border-radius: 4px;
 
   }
 
@@ -145,7 +145,8 @@
     color: #fff;
     padding-bottom: 4px;
 
-  }
+  }    
+  
 
   .img-placeholder-other {
 
@@ -204,8 +205,7 @@
     grid-area: ft;
     justify-content: center;
     align-items: center;
-    background-color: #001C97;
-    
+    background-color: #001C97;   
 
   }
 
@@ -216,13 +216,5 @@
     color: white;
 
   }
-
-
-  
-
-
-
-
-
 
 }
